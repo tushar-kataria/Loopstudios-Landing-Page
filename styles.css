@@ -1,0 +1,268 @@
+@import url('https://fonts.google.com/specimen/Alata');
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+/* Basic styles */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    color: hsl(0, 0%, 41%);
+    font-family: 'Alata', sans-serif;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+.container
+{
+    max-width: 1430px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.top
+{
+    background: url('images/desktop/image-hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.7), inset -120px -100px 250px rgba(0, 0, 0, 0.7);
+    position: relative;   
+}
+
+/* .top::before
+{
+    content: '';
+    background: url('images/desktop/image-hero.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+} */
+.lead
+{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.btn
+{
+    /* display: inline-block; */
+    border: 1px solid hsl(0, 0%, 41%);
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover
+{
+    border: 1px solid transparent;
+    color: #fff;
+    /* background-color: hsl(0, 0%, 41%); */
+    background-color: #333;
+}
+
+/* navbar */
+.navbar
+{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav ul li a
+{
+    color: #fff;
+    padding: 10px;
+    margin-right: 30px;
+}
+nav ul li a:hover
+{
+    border-bottom: #fff solid 2px;
+}
+
+.logo
+{
+    color: #fff;
+    margin-left: 100px;
+    z-index: 100;
+}
+
+.top-content
+{
+    /* position: absolute; */
+    width: 40%;
+    height: 250px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 60px;
+    margin-left: 180px;
+    margin-top: 100px;
+    padding: 20px 30px 20px 60px;
+    font-family: 'Josefin serif';
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+/* Section: Interactive */
+#interactive
+{
+    display: flex;
+    position: relative;
+    height: 90vh;
+}
+
+#interactive img
+{
+    position: absolute;
+    top: 150px;
+    left: 115px;
+    width: 600px;
+    height: 400px;
+}
+
+.interactive-content
+{
+    position: absolute;
+    top: 280px;
+    right: 200px;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    padding: 50px 100px;
+    font-family: 'Josefin sans';
+}
+
+.interactive-content h1
+{
+
+    margin-bottom: 15px;
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+
+/* Section: Creation */
+.creation-top
+{
+    margin-left: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .creation-top .btn
+{
+    margin-right: 56px;
+} */
+
+.creation-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    margin-left: 112px;
+    gap: 20px;
+}
+
+.card
+{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.card:hover
+{
+    opacity: 0.5;
+}
+
+.card img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.card h2
+{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+#footer
+{
+    margin: 70px 0;
+    background-color: hsl(0, 0%, 0%);
+    color: #fff;
+}
+
+.footer-content
+{
+    margin-left: 190px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content-1,
+.footer-content-2
+{
+    margin-top: 50px;
+}
+
+
+
+.footer-list ul
+{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-list ul li a
+{
+    color: #fff;
+    margin-right: 20px;
+    padding: 8px 0;
+}
+
+.footer-list ul li a:hover
+{
+    border-bottom: 2px solid #fff;
+}
+
+.footer-content-2 img
+{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-content-2 p
+{
+    color: hsl(0, 0%, 55%);
+}
